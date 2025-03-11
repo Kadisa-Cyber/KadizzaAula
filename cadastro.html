@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/csscadastro.css">
+    <title>Cadastrar clientes</title>
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" />
+</head>
+
+<body>
+
+    <header>
+        <div class="containerHeader">
+            <a href="index.html">
+                <div class="imgHeader">
+                    <img src="img/logo.png">
+                </div>
+            </a>
+            <div class="aHeader">
+                <a href="login.html" class="naoAtivo">
+                    Login
+                </a>
+                <a href="index.html" class="naoAtivo">
+                    Cadastro de pizzas
+                </a>
+                <a class="Ativo">
+                    Cadastro de clientes
+                </a>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="imgFundo">
+        Cadastro de clientes
+    </div>
+
+    <div class="containerAll">
+        <div class="limitador">
+            <div class="containerCadastro">
+
+                <form>
+                    <h1 id="tituloContainer">
+                        Informações de clientes
+                    </h1>
+
+                    <div class="containerInfo">
+
+                        <div class="containerInfoPtUm">
+
+                            <h1>Informações pessoais</h1>
+                            <hr class="divisao">
+                            <label for="User">CPF</label>
+                            <input type="text" id="IDNome" name="cpf" required/>
+                            <input type="button" value="Consultar" id="consultarInput" name="botaoConsultarCPF" required/>
+                            <label for="User">Nome</label>
+                            <input type="text" id="IDSobrenome" name="nome" required/>
+                            <label for="User">Telefone</label>
+                            <input type="number" id="IDTelefone" name="telefone" required/>
+                        </div>
+
+                        <div class="containerInfoPtDois">
+                            <h1>Endereço de entrega</h1>
+                            <hr class="divisao">
+                            <label for="rua">Rua</label>
+                            <input type="text" id="IDRua" name="rua" required/>
+                            <label for="numeroEntrega">Número de entrega</label>
+                            <input type="text" id="IDNumero" name="numeroEntrega" required/>
+                            <label for="bairro">Bairro</label>
+                            <input type="text" id="IDBairro" name="bairro" required/>
+
+                            <div class="cidadeUF">                        
+                                <div class="containerUF">
+                                    <label for="uf">UF</label>
+                                    <input type="text" id="IDUF" name="uf" required />
+                                </div>
+                            </div>
+                        
+                        </div>
+
+                    </div>
+
+                    <input type="submit" value="Cadastrar" id="cadastrarInput" name="cadastrar" />
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="img/logo.png" alt="Logo" class="footer-image">
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Sobre Nós</h3>
+                    <ul>
+                        <li><a href="#">Quem Somos</a></li>
+                        <li><a href="#">Missão</a></li>
+                        <li><a href="#">Visão</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contato</h3>
+                    <ul>
+                        <li><a href="#">Email</a></li>
+                        <li><a href="#">Telefone</a></li>
+                        <li><a href="#">Endereço</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Suporte</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/cepConsultar.js"></script>
+
+</body>
+
+</html>

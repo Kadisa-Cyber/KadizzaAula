@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cssCadPizza.css">
+    <title>Cadastrar Pizza</title>
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" />
+</head>
+
+<body>
+    <div class="containerAll">
+        <div class="limitador">
+            <div class="containerCadastro">
+                <h1 id="tituloContainer">
+                    Cadastrar novas pizzas
+                </h1>
+                <form>
+                    <div class="containerInfo">
+                        <div class="containerInfoPtUm">
+
+                            <h1>Informações</h1>
+                            <hr class="divisao">
+                            <label for="User">Nome da pizza</label>
+                            <input type="text" id="IDNome" name="nome" required/>
+                            <label for="User">Descrição</label>
+                            <textarea id="IDDescricao" name="descricao" required rows="4" cols="50"></textarea>
+                            <label for="User">Valor</label>
+                            <input type="number" id="IDValor" name="valor" required/>
+
+                        </div>
+                    </div>
+
+                    <input type="submit" value="Cadastrar" id="cadastrarInput" name="fName" />
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
